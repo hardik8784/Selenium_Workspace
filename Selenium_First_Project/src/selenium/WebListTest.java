@@ -18,13 +18,25 @@ public class WebListTest {
 		
 		driver.get("https://www.google.ca/");
 		
-		List<WebElement> allLink = driver.findElements(By.tagName("a"));
+		/*List<WebElement> allLink = driver.findElements(By.tagName("a"));
 		System.out.println(allLink.size());
 		
 		
 		for(int i =0; i<allLink.size();i++)
 		{
 			System.out.println(allLink.get(i).getText());
+		}*/
+		
+		//------------------------------------------------------//
+		
+		List<WebElement> footerLink = driver.findElements(By.xpath("//div[@class='KxwPGc SSwjIe']"));
+		System.out.println(footerLink.size());
+		
+	
+		
+		for(int i =0; i<footerLink.size();i++)
+		{
+			System.out.println(footerLink.get(i).getText());
 		}
 	}
 

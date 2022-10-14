@@ -1,7 +1,9 @@
 package selenium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class FacebookSignUpTest {
 
@@ -24,8 +26,27 @@ public class FacebookSignUpTest {
 		driver.findElement(By.name("reg_email__")).sendKeys("1010101010");
 		//enter password
 		driver.findElement(By.id("password_step_input")).sendKeys("dasqwAsFAGWRG$!");
+		
+		//Month-July
+		WebElement month_box = driver.findElement(By.id("month"));
+		Select month = new Select(month_box);
+		
+		month.selectByVisibleText("Jul");
+		
+		//Day-15
+		WebElement day_box = driver.findElement(By.id("day"));
+		Select day = new Select(day_box);
+		day.selectByValue("15");
+		
+		//Year-2000
+		WebElement year_box = driver.findElement(By.id("year"));
+		Select year = new Select(year_box);
+		
+		year.selectByVisibleText("2000");
+		
 		//Click on Signup
 		driver.findElement(By.name("websubmit")).click();
+		
 	}
 
 }
