@@ -44,6 +44,9 @@ public class FacebookSignUpTest {
 		
 		year.selectByVisibleText("2000");
 		
+		
+		driver.findElement(By.xpath("//input[@value='2']")).click();
+		
 		//Click on Signup
 		driver.findElement(By.name("websubmit")).click();
 		

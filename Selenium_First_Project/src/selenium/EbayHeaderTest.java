@@ -18,7 +18,7 @@ public class EbayHeaderTest {
 		
 		driver.get("https://www.ebay.ca/");
 		
-		List<WebElement> HeaderLinks = driver.findElements(By.xpath("//ul[@class = 'hl-cat-nav__container' ]/li"));
+		List<WebElement> HeaderLinks = driver.findElements(By.xpath("//ul[@class = 'hl-cat-nav__container' ]/li"));			////ul[@class = 'hl-cat-nav__container' ]/li for the other than home just 11 
 		
 		System.out.println(HeaderLinks.size());
 		

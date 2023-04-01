@@ -1,7 +1,11 @@
 package selenium;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BackAndForwardTest {
 
@@ -15,18 +19,27 @@ public class BackAndForwardTest {
 		
 		driver.get("https://www.google.ca/");
 		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		
+		
 		driver.findElement(By.linkText("About")).click();
 		//driver.findElement(By.partialLinkText("Abo")).click();
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		wait.until(ExpectedConditions.titleContains("About Google"));
+		//wait.until(ExpectedConditions.titleIs("Google - About Google, Our Culture & Company News"));
 		System.out.println(driver.getTitle());
 		
 		driver.navigate().back();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		//wait.until(ExpectedConditions.titleIs("Google"));
+		wait.until(ExpectedConditions.titleContains("Google"));
 		System.out.println(driver.getTitle());
 		
 		driver.navigate().forward();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		//wait.until(ExpectedConditions.titleIs("Google - About Google, Our Culture & Company News"));
+		wait.until(ExpectedConditions.titleContains("About Google"));
 		System.out.println(driver.getTitle());
 	}
 

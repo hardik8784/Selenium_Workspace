@@ -18,6 +18,7 @@ public class YahooSuggestionListTest {
 		
 		//Canada in Search
 		//driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Canada");
+		driver.findElement(By.name("p")).click();
 		driver.findElement(By.name("p")).sendKeys("Canada");
 		Thread.sleep(3000);
 		
