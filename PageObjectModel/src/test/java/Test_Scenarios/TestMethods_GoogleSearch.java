@@ -13,6 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestMethods_GoogleSearch {
 	WebDriver driver;
+	GoogleSearchPage objectRepo;
 	
 	@BeforeTest
 	public void beforetest() {
@@ -25,12 +26,17 @@ public class TestMethods_GoogleSearch {
 	}
 
 	@Test
-	public void SearchOperation() throws InterruptedException {
+	public void SearchOperation() {
 		//Create object of a class on method level instead of Global level
 		GoogleSearchPage page = new GoogleSearchPage(driver);
 		page.searchgoogle("facebook");
+	}
+	
+	@Test
+	public void VerifyAndAccessFacebook() {
+		objectRepo = new GoogleSearchPage(driver);
+		objectRepo.ClickFacebookLink();
 		
-		Thread.sleep(10000);	//Will remove this later, just checking the execution
 	}
 	
 	@AfterTest
