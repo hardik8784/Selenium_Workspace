@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import Objects.FacebookPage;
 import Objects.GoogleSearchPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,18 +26,25 @@ public class TestMethods_GoogleSearch {
 		driver.get("https://www.google.com/");
 	}
 
-	@Test
+	@Test(priority = 0)
 	public void SearchOperation() {
 		//Create object of a class on method level instead of Global level
 		GoogleSearchPage page = new GoogleSearchPage(driver);
 		page.searchgoogle("facebook");
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void VerifyAndAccessFacebook() {
 		objectRepo = new GoogleSearchPage(driver);
 		objectRepo.ClickFacebookLink();
-		
+	}
+	
+	@Test(priority = 2)
+	public void VerifyLogin() {
+		FacebookPage page = new FacebookPage(driver);
+		page.EnterUserName();
+		page.EnterPassword();
+		page.VerifyLogin();
 	}
 	
 	@AfterTest

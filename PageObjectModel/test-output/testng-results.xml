@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-04T21:03:48 EDT" name="Default suite" finished-at="2023-04-04T21:04:06 EDT" duration-ms="18126">
+  <suite started-at="2023-04-04T21:15:34 EDT" name="Default suite" finished-at="2023-04-04T21:15:53 EDT" duration-ms="18438">
     <groups>
     </groups>
-    <test started-at="2023-04-04T21:03:48 EDT" name="Default test" finished-at="2023-04-04T21:04:06 EDT" duration-ms="18126">
+    <test started-at="2023-04-04T21:15:34 EDT" name="Default test" finished-at="2023-04-04T21:15:53 EDT" duration-ms="18438">
       <class name="Test_Scenarios.TestMethods_GoogleSearch">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@3e27ba32]" started-at="2023-04-04T21:03:48 EDT" name="beforetest" finished-at="2023-04-04T21:03:51 EDT" duration-ms="2634" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@7ef82753]" started-at="2023-04-04T21:15:34 EDT" name="beforetest" finished-at="2023-04-04T21:15:37 EDT" duration-ms="2384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="SearchOperation()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@3e27ba32]" started-at="2023-04-04T21:03:51 EDT" name="SearchOperation" finished-at="2023-04-04T21:04:01 EDT" duration-ms="10153" status="PASS">
+        <test-method signature="SearchOperation()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@7ef82753]" started-at="2023-04-04T21:15:37 EDT" name="SearchOperation" finished-at="2023-04-04T21:15:47 EDT" duration-ms="9975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchOperation -->
-        <test-method signature="VerifyAndAccessFacebook()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@3e27ba32]" started-at="2023-04-04T21:04:01 EDT" name="VerifyAndAccessFacebook" finished-at="2023-04-04T21:04:06 EDT" duration-ms="4728" status="PASS">
+        <test-method signature="VerifyAndAccessFacebook()[pri:1, instance:Test_Scenarios.TestMethods_GoogleSearch@7ef82753]" started-at="2023-04-04T21:15:47 EDT" name="VerifyAndAccessFacebook" finished-at="2023-04-04T21:15:51 EDT" duration-ms="4636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAndAccessFacebook -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@3e27ba32]" started-at="2023-04-04T21:04:06 EDT" name="aftertest" finished-at="2023-04-04T21:04:06 EDT" duration-ms="577" status="PASS">
+        <test-method signature="VerifyLogin()[pri:2, instance:Test_Scenarios.TestMethods_GoogleSearch@7ef82753]" started-at="2023-04-04T21:15:51 EDT" name="VerifyLogin" finished-at="2023-04-04T21:15:52 EDT" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogin -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:Test_Scenarios.TestMethods_GoogleSearch@7ef82753]" started-at="2023-04-04T21:15:52 EDT" name="aftertest" finished-at="2023-04-04T21:15:53 EDT" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
