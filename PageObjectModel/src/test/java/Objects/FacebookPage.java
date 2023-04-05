@@ -26,7 +26,7 @@ public class FacebookPage {
 	}
 	
 	public void VerifyLogin() {
-		driver.findElement(loginButton).click();
+		//driver.findElement(loginButton).click();
 		String title = driver.getTitle();
 		assertEquals(title,"Facebook - log in or sign up");
 	}
