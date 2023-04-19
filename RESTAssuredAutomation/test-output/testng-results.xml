@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-19T12:50:01 EDT" name="Default suite" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1244">
+  <suite started-at="2023-04-19T12:59:42 EDT" name="Default suite" finished-at="2023-04-19T12:59:43 EDT" duration-ms="1625">
     <groups>
     </groups>
-    <test started-at="2023-04-19T12:50:01 EDT" name="Default test" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1244">
+    <test started-at="2023-04-19T12:59:42 EDT" name="Default test" finished-at="2023-04-19T12:59:43 EDT" duration-ms="1625">
       <class name="tests.SoapXMLRequest">
-        <test-method signature="validateSoapXML()[pri:0, instance:tests.SoapXMLRequest@52af26ee]" started-at="2023-04-19T12:50:01 EDT" name="validateSoapXML" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1214" status="PASS">
+        <test-method signature="validateSoapXML()[pri:0, instance:tests.SoapXMLRequest@52af26ee]" started-at="2023-04-19T12:59:42 EDT" name="validateSoapXML" finished-at="2023-04-19T12:59:43 EDT" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSoapXML -->

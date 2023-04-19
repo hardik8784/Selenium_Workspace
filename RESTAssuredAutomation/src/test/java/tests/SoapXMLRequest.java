@@ -1,6 +1,7 @@
 package tests;
 
 import static io.restassured.RestAssured.baseURI;
+import static org.hamcrest.Matchers.equalTo;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+
 
 
 public class SoapXMLRequest {
@@ -30,7 +32,8 @@ public class SoapXMLRequest {
 		
 		baseURI = "http://www.dneonline.com";
 		
-		RestAssured.given().contentType("text/xml").accept(ContentType.XML).body(requestBody).when().post("/calculator.asmx").then().statusCode(200).log().all();
+		RestAssured.given().contentType("text/xml").accept(ContentType.XML).body(requestBody).when().post("/calculator.asmx").then().statusCode(200).
+		log().all().and().body("//*:AddResult.text()",equalTo("5"));
 	}
 
 }
