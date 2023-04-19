@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-19T11:53:23 EDT" name="Default suite" finished-at="2023-04-19T11:53:25 EDT" duration-ms="1393">
+  <suite started-at="2023-04-19T12:50:01 EDT" name="Default suite" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1244">
     <groups>
     </groups>
-    <test started-at="2023-04-19T11:53:23 EDT" name="Default test" finished-at="2023-04-19T11:53:25 EDT" duration-ms="1393">
-      <class name="tests.JSONSchemmaValidator">
-        <test-method signature="testGet()[pri:0, instance:tests.JSONSchemmaValidator@209da20d]" started-at="2023-04-19T11:53:23 EDT" name="testGet" finished-at="2023-04-19T11:53:25 EDT" duration-ms="1362" status="PASS">
+    <test started-at="2023-04-19T12:50:01 EDT" name="Default test" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1244">
+      <class name="tests.SoapXMLRequest">
+        <test-method signature="validateSoapXML()[pri:0, instance:tests.SoapXMLRequest@52af26ee]" started-at="2023-04-19T12:50:01 EDT" name="validateSoapXML" finished-at="2023-04-19T12:50:03 EDT" duration-ms="1214" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGet -->
-      </class> <!-- tests.JSONSchemmaValidator -->
+        </test-method> <!-- validateSoapXML -->
+      </class> <!-- tests.SoapXMLRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
